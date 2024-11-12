@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #222;
+  color: #fff;
+}
+
+header .logo img {
+  max-height: 85px;
+  width: auto;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  background-color: #333;
+  border: none;
+  border-radius: 100%;
+  padding: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-toggle img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+}
+
+.nav-container {
+  display: flex;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #f0a500;
+}
+
+.nav-menu li .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  top: 130%;
+  left: 0;
+  min-width: 160px;
+  list-style: none;
+  padding: 0;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.nav-menu li:hover .dropdown {
+  display: block;
+}
+
+.nav-menu li .dropdown li a {
+  padding: 10px 20px;
+  display: block;
+  color: #fff;
+}
+
+.nav-menu li .dropdown li a:hover {
+  background-color: #444;
+  color: #f0a500;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 5px 30px;
+}
+
+.footer-section {
+  max-width: 200px;
+}
+
+.footer-section h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #f0a500;
+}
+
+.social-media ul,
+.partner-brand ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-media ul li,
+.partner-brand ul li {
+  list-style: none;
+}
+
+.social-media ul li a img,
+.partner-brand ul li a img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+  transition: filter 0.3s;
+}
+
+.social-media ul li a img:hover,
+.partner-brand ul li a img:hover {
+  filter: invert(60%) sepia(100%) saturate(600%) hue-rotate(15deg);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1080px) {
+  .nav-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 100;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-container.show {
+    display: flex;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+
+  .nav-menu li {
+    width: 100%;
+  }
+
+  .nav-menu li a {
+    color: #fff;
+    padding: 5px 10px;
+    display: block;
+    text-align: left;
+  }
+
+  .nav-menu li .dropdown {
+    display: block;
+    position: static;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .nav-menu li .dropdown li a {
+    padding: 6px 30px;
+    font-weight: normal;
+    color: #f4f4f4;
+    display: block;
+  }
+
+  .nav-menu li .dropdown li a:hover {
+    background-color: #555;
+    color: #f0a500;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    max-width: 100%;
+    text-align: center;
+  }
+}

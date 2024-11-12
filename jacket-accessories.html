@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacket</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/acc-style.css" />
+    <link rel="shortcut icon" href="assets/logo/Logo.svg" />
+    <script src="script/toggleMenu.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/localstorage.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/logo/Logo.svg" alt="Hoops Universe Logo" />
+        </a>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <img src="assets/icon/menu.svg" alt="Menu Icon" />
+      </button>
+      <nav class="nav-container">
+        <ul class="nav-menu">
+          <li>
+            <a href="shoes.html">Shoes</a>
+            <ul class="dropdown">
+              <li><a href="men-shoes.html">Men</a></li>
+              <li><a href="women-shoes.html">Women</a></li>
+              <li><a href="kids-shoes.html">Kids</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="accessories.html">Accessories</a>
+            <ul class="dropdown">
+              <li><a href="basketball-accessories.html">Basketball</a></li>
+              <li><a href="jersey-accessories.html">Jersey</a></li>
+              <li><a href="jacket-accessories.html">Jacket</a></li>
+              <li>
+                <a href="knee-supports-accessories.html">Knee Supports</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="purchase-product.html">Purchase Product</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="all-products">
+        <h2>All Jacket Collection</h2>
+        <div class="product-grid">
+          <div class="product-item">
+            <img src="assets/jacket/Atlanta Hawks Jacket.jpg" />
+            <h3>Atlanta Hawks Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Atlanta Hawks Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Boston Celtics Jacket.jpg" />
+            <h3>Boston Celtics Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Boston Celtics Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Brooklyn Nets Jacket.jpg" />
+            <h3>Brooklyn Nets Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Brooklyn Nets Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Charlotte Hornets Jacket.jpg" />
+            <h3>Charlotte Hornets Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Charlotte Hornets Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Chicago Bulls Jacket.jpg" />
+            <h3>Chicago Bulls Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Chicago Bulls Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Cleveland Cavaliers Jacket.jpg" />
+            <h3>Cleveland Cavaliers Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Cleveland Cavaliers Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Dallas Mavericks Jacket.jpg" />
+            <h3>Dallas Mavericks Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Dallas Mavericks Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Denver Nuggets Jacket.jpg" />
+            <h3>Denver Nuggets Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Denver Nuggets Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Detroit Pistons Jacket.jpg" />
+            <h3>Detroit Pistons Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Detroit Pistons Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Golden State Warriors Jacket.jpg" />
+            <h3>Golden State Warriors Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Golden State Warriors Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Houston Rockets Jacket.jpg" />
+            <h3>Houston Rockets Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Houston Rockets Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Indiana Pacers Jacket.jpg" />
+            <h3>Indiana Pacers Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Indiana Pacers Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/LA Clippers Jacket.jpg" />
+            <h3>Los Angeles Clippers Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Los Angeles Clippers Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Los Angeles Lakers Jacket.jpg" />
+            <h3>Los Angeles Lakers Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Los Angeles Lakers Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Memphis Grizzlies Jacket.jpg" />
+            <h3>Memphis Grizzlies Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Memphis Grizzlies Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Miami Heat Jacket.jpg" />
+            <h3>Miami Heat Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Miami Heat Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Milwaukee Bucks Jacket.jpg" />
+            <h3>Milwaukee Bucks Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Milwaukee Bucks Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Minnesota Timberwolves Jacket.jpg" />
+            <h3>Minnesota Timberwolves Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Minnesota Timberwolves Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/New Orleans Pelicans Jacket.jpg" />
+            <h3>New Orleans Pelicans Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="New Orleans Pelicans Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/New York Knicks Jacket.jpg" />
+            <h3>New York Knicks Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="New York Knicks Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Oklahoma City Thunder Jacket.jpg" />
+            <h3>Oklahoma City Thunder Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Oklahoma City Thunder Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Orlando Magic Jacket.jpg" />
+            <h3>Orlando Magic Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Orlando Magic Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Philadelphia 76ers Jacket.jpg" />
+            <h3>Philadelphia 76ers Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Philadelphia 76ers Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Phoenix Suns Jacket.jpg" />
+            <h3>Phoenix Suns Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Phoenix Suns Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Portland Trail Blazers Jacket.jpg" />
+            <h3>Portland Trail Blazers Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Portland Trail Blazers Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Sacramento Kings Jacket.jpg" />
+            <h3>Sacramento Kings Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Sacramento Kings Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/San Antonio Spurs Jacket.jpg" />
+            <h3>San Antonio Spurs Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="San Antonio Spurs Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Toronto Raptors Jacket.jpg" />
+            <h3>Toronto Raptors Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Toronto Raptors Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Utah Jazz Jacket.jpg" />
+            <h3>Utah Jazz Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Utah Jazz Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="assets/jacket/Washington Wizards Jacket.jpg" />
+            <h3>Washington Wizards Jacket</h3>
+            <p>Rp 1.600.000</p>
+            <a
+              href="purchase-product.html"
+              class="buy-button"
+              data-product-name="Washington Wizards Jacket"
+              data-product-price="Rp 1.600.000"
+              >Buy</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section partner-brand">
+          <h4>Partner Brand</h4>
+          <ul>
+            <li>
+              <a href="https://www.adidas.com"
+                ><img src="assets/logo/brand-adidas.svg" alt="Adidas"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.nike.com"
+                ><img src="assets/logo/brand-nike.svg" alt="Nike"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.nike.com/jordan"
+                ><img src="assets/logo/brand-jordan.svg" alt="Jordan"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.underarmour.com"
+                ><img
+                  src="assets/logo/brand-under-armour.svg"
+                  alt="Under Armour"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section social-media">
+          <h4>Follow Us</h4>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/"
+                ><img src="assets/icon/facebook.svg" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"
+                ><img src="assets/icon/instagram.svg" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com"
+                ><img src="assets/icon/twitter.svg" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com"
+                ><img src="assets/icon/youtube.svg" alt="YouTube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2021 Hoops Universe. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
