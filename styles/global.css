@@ -15,8 +15,17 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+}
+
+body {
+  background-color: #ffffff;
+  opacity: 0.2;
+  background-image: radial-gradient(
+    #c4b7b7 0.6000000000000001px,
+    #ffffff 0.6000000000000001px
+  );
+  background-size: 12px 12px;
+  opacity: 1;
 }
 
 header {
