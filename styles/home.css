@@ -125,7 +125,6 @@ h2 {
 @media only screen and (max-width: 1080px) {
   .slider-container {
     max-width: 1300px;
-    
   }
 
   .slide {
@@ -138,7 +137,7 @@ h2 {
   }
 
   .slide img {
-    object-fit: cover;
+    height: auto;
   }
 
   .product-grid {
@@ -174,6 +173,10 @@ h2 {
 @media only screen and (max-width: 768px) {
   .slider-container {
     max-width: 100%;
+  }
+
+  .slide img {
+    height: auto;
   }
 
   .prev,
