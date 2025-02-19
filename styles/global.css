@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #fff;
@@ -74,7 +75,7 @@ header .logo img {
   transition: color 0.3s;
 }
 .nav-menu li a:hover {
-  color: #f0a500;
+  color: #ff6b00;
 }
 .nav-menu li .dropdown {
   display: none;
@@ -98,7 +99,7 @@ header .logo img {
 }
 .nav-menu li .dropdown li a:hover {
   background-color: #444;
-  color: #f0a500;
+  color: #ff6b00;
 }
 footer {
   background-color: #222;
@@ -140,7 +141,7 @@ footer {
   transition: color 0.3s;
 }
 .footer-section ul li a:hover {
-  color: #f0a500;
+  color: #ff6b00;
 }
 .social-media ul,
 .partner-brand ul {
@@ -161,7 +162,7 @@ footer {
 }
 .social-media ul li a img:hover,
 .partner-brand ul li a img:hover {
-  filter: invert(60%) sepia(100%) saturate(600%) hue-rotate(15deg);
+  filter: invert(45%) sepia(100%) saturate(600%) hue-rotate(-10deg);
 }
 .footer-bottom {
   text-align: center;
@@ -217,7 +218,7 @@ footer {
   }
   .nav-menu li .dropdown li a:hover {
     background-color: #555;
-    color: #f0a500;
+    color: #ff6b00;
   }
   .footer-container {
     flex-direction: column;
