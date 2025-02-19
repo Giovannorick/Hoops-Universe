@@ -1,6 +1,6 @@
 # Hoops Universe
 
-Hoops Universe is a basketball-focused website dedicated to providing in-depth coverage of basketball games, news, and events. Designed with a Nike-inspired aesthetic, the website delivers a seamless browsing experience for basketball enthusiasts, offering a well-structured layout and responsive design.
+Hoops Universe is a basketball-focused website dedicated to providing in-depth coverage of basketball games, news, and events. The website delivers a seamless browsing experience for basketball enthusiasts, offering a well-structured layout and responsive design.
 
 The project is built with **HTML, CSS, JavaScript, and jQuery**, ensuring a smooth and interactive user experience. It features structured navigation, a dropdown menu, and local storage functionality for an enhanced shopping experience.
 
